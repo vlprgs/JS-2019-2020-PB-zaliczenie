@@ -4,7 +4,7 @@ let darkmoonDeck = [];
 let hand = [];
 let handValues = []
 let handTypes = []
-console.log("test")
+
 
 //nested loop for pairing cards with type, then allocating it in single array as deck of cards
 
@@ -20,7 +20,7 @@ console.log("test")
 }
 
 
-console.log(createDeck())
+
 
 // roll 5 cards
 function rollDeck(){
@@ -32,9 +32,7 @@ for(let i=0; i<5; i++) {
     }
     return hand
 }
-console.log(rollDeck())
-console.log(darkmoonDeck)
-console.log(hand)
+
 
 function revealHand(){
   for(let i=0; i<5; i++){
@@ -77,7 +75,9 @@ function revealHand(){
   }
 
 
-  
+createDeck()
+rollDeck()
+console.log(hand)
 isPair()
 isTriples()
 isFlush()
