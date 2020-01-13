@@ -56,8 +56,30 @@ function revealHand(){
     } else {
       return false
     }
-
+  }
+  function isPair(){
+    if ( handValues[0] == handValues[1] || handValues[1] == handValues[2] || handValues[2] == handValues[3] || handValues[3] == handValues[4]){
+      console.log("pair")
+    } else {
+      return false
+    }
+  }
+  function isTriples(){
+    if ( handValues[0] == handValues[1] && handValues[1] == handValues[2]){
+      console.log("triples")
+    } else if ( handValues[1] == handValues[2] && handValues[2] == handValues[3]){
+      console.log("triples")
+    } else if ( handValues[2] == handValues[3] && handValues[3] == handValues[4]){
+      console.log("triples")
+    } else {
+      return false
+    }
   }
 
+
+  
+isPair()
+isTriples()
+isFlush()
 isRoyalFlush()
 revealHand()
